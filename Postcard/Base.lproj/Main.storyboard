@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mUf-N1-ODd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="flG-14-mrd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vao-Xt-bNC">
@@ -108,6 +109,16 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u2K-hC-Cbn"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS1-6F-Xjc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="155" width="176" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -118,6 +129,7 @@
                                 <exclude reference="VdJ-do-o1z"/>
                                 <exclude reference="kYc-Qe-CFm"/>
                                 <exclude reference="WmN-cX-rjV"/>
+                                <exclude reference="IS1-6F-Xjc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -127,6 +139,7 @@
                                 <include reference="VdJ-do-o1z"/>
                                 <include reference="kYc-Qe-CFm"/>
                                 <include reference="WmN-cX-rjV"/>
+                                <include reference="IS1-6F-Xjc"/>
                             </mask>
                         </variation>
                     </view>
@@ -135,6 +148,7 @@
                         <outlet property="enterNameTextField" destination="MlI-eD-mTY" id="2yO-BN-GbG"/>
                         <outlet property="messageButton" destination="WmN-cX-rjV" id="zEX-1w-FE8"/>
                         <outlet property="messageLabel" destination="kYc-Qe-CFm" id="79c-Fj-eB6"/>
+                        <outlet property="nameLabel" destination="IS1-6F-Xjc" id="qnT-j2-wCn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
